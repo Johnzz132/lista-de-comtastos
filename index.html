@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kode+Mono:wght@400..700&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <h1 id="title">Contactos</h1>
+  <form id="form">
+    <div class="form-input-container">
+      <label for="input-name">Nombre</label>
+      <input type="text" id="input-name" name="input-name">
+      <p class="info">
+        Tiene que incluir nombre y apellido. <br>
+        Tanto el nombre como el apellido deben comenzar con mayusculas.
+      </p>
+    </div>
+    <div class="form-input-container">
+      <label for="input-number">Numero</label>
+      <input type="text" id="input-number" name="input-number">
+      <p class="info">
+        Tiene que ser un numero venezolano.
+      </p>
+    </div>
+    <button id="form-btn" disabled>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="plus">
+        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+      </svg>
+      
+    </button>
+  </form>
+  <ul id="list">
+  </ul>
+  <script src="dom.js"></script>
+</div>
+</body>
+</html>
